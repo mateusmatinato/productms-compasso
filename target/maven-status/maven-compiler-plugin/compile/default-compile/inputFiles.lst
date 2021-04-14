@@ -1,0 +1,16 @@
+/mnt/arquivos/Projetos/product-ms/src/main/java/com/compasso/productms/config/ExceptionHandlerConfig.java
+/mnt/arquivos/Projetos/product-ms/src/main/java/com/compasso/productms/entity/ProductEntity.java
+/mnt/arquivos/Projetos/product-ms/target/generated-sources/openapi/src/main/java/com/compasso/api/ProductsApiDelegate.java
+/mnt/arquivos/Projetos/product-ms/target/generated-sources/openapi/src/main/java/com/compasso/model/Product.java
+/mnt/arquivos/Projetos/product-ms/target/generated-sources/openapi/src/main/java/com/compasso/model/Error.java
+/mnt/arquivos/Projetos/product-ms/src/main/java/com/compasso/productms/controller/ProductController.java
+/mnt/arquivos/Projetos/product-ms/src/main/java/com/compasso/productms/ProductMsApplication.java
+/mnt/arquivos/Projetos/product-ms/target/generated-sources/openapi/src/main/java/com/compasso/api/ProductsApi.java
+/mnt/arquivos/Projetos/product-ms/src/main/java/com/compasso/productms/config/SecurityConfig.java
+/mnt/arquivos/Projetos/product-ms/target/generated-sources/openapi/src/main/java/com/compasso/model/ProductData.java
+/mnt/arquivos/Projetos/product-ms/target/generated-sources/openapi/src/main/java/com/compasso/api/ApiUtil.java
+/mnt/arquivos/Projetos/product-ms/src/main/java/com/compasso/productms/config/SpringFoxConfig.java
+/mnt/arquivos/Projetos/product-ms/src/main/java/com/compasso/productms/service/ProductService.java
+/mnt/arquivos/Projetos/product-ms/target/generated-sources/openapi/src/main/java/com/compasso/api/ProductsApiController.java
+/mnt/arquivos/Projetos/product-ms/src/main/java/com/compasso/productms/exception/UserNotFoundException.java
+/mnt/arquivos/Projetos/product-ms/src/main/java/com/compasso/productms/repository/ProductRepository.java

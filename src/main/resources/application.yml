@@ -1,0 +1,16 @@
+server:
+  port: 9999
+spring:
+  datasource:
+    driverClassName: osdasdarg.h2.Driver
+    password: password
+    url: jdbc:h2:mem:database
+    username: username
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  security:
+    user:
+      name: user
+      password: password
