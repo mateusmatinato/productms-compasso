@@ -41,18 +41,18 @@ public class ProductService {
 
     public Product updateProduct(Long id, ProductData productNew) {
         ProductEntity productOld = repository.findById(id).orElseThrow(ProductNotFoundException::new);
-        ProductEntity productMerged = mergeProductNewWithOld(productNew, productOld);
+        ProductEntity productMerged = mergeNewProductWithOld(productNew, productOld);
+        productMerged = repository.save(productMerged);
 
         log.info(String.format("Product -> %s", productMerged));
         return getProductFromEntity(productMerged);
     }
 
-    private ProductEntity mergeProductNewWithOld(ProductData productData, ProductEntity productEntity) {
-        productEntity.setName(productData.getName());
-        productEntity.setDescription(productData.getDescription());
-        productEntity.setPrice(productData.getPrice());
-        productEntity = repository.save(productEntity);
-        return productEntity;
+    private ProductEntity mergeNewProductWithOld(ProductData productNew, ProductEntity productOld) {
+        productOld.setName(productNew.getName());
+        productOld.setDescription(productNew.getDescription());
+        productOld.setPrice(productNew.getPrice());
+        return productOld;
     }
 
     public void deleteProduct(Long id) {
