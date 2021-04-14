@@ -4,24 +4,25 @@ import com.compasso.productms.entity.ProductEntity;
 import com.compasso.productms.repository.ProductRepository;
 import com.compasso.productms.service.ProductService;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+@ExtendWith(MockitoExtension.class)
 public class ProductServiceTest {
 
+    @InjectMocks
     private ProductService service;
-    private ProductRepository repository;
 
-    @BeforeEach
-    public void config() {
-        repository = Mockito.mock(ProductRepository.class);
-        service = new ProductService();
-    }
+    @Mock
+    private ProductRepository repository;
 
     @Test
     public void testListProducts() {

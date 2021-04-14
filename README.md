@@ -2,7 +2,7 @@
 * Teste técnico com desenvolvimento de API Rest
 * Especificações do teste podem ser encontradas no link: <https://bitbucket.org/RecrutamentoDesafios/desafio-java-springboot/src/master/>
 
-##Passo a passo para execução
+## Passo a passo para execução
 ### Clone este repositório
 $ git clone <https://github.com/mateusmatinato/productms-compasso.git>
 

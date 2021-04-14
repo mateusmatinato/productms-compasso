@@ -5,9 +5,12 @@ import com.compasso.model.Product;
 import com.compasso.model.ProductData;
 import com.compasso.productms.service.ProductService;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -16,16 +19,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+@ExtendWith(MockitoExtension.class)
 public class ProductControllerTest {
 
+    @InjectMocks
     private ProductController controller;
-    private ProductService service;
 
-    @BeforeEach
-    public void config() {
-        service = Mockito.mock(ProductService.class);
-        controller = new ProductController();
-    }
+    @Mock
+    private ProductService service;
 
     @Test
     public void testListProducts() {
