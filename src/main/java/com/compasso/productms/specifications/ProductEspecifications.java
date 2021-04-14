@@ -1,6 +1,5 @@
 package com.compasso.productms.specifications;
 
-import com.compasso.model.Product;
 import com.compasso.productms.entity.ProductEntity;
 import org.springframework.data.jpa.domain.Specification;
 
