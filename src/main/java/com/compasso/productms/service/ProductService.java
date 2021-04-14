@@ -56,11 +56,8 @@ public class ProductService {
     }
 
     public void deleteProduct(Long id) {
-        try {
-            repository.deleteById(id);
-        } catch (Exception e) {
-            throw new ProductNotFoundException();
-        }
+        this.findProductById(id);
+        repository.deleteById(id);
     }
 
     public Product findProductById(Long id) {
