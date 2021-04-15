@@ -36,6 +36,7 @@ public class ProductServiceTest {
 
     @Test
     public void testDeleteProduct() {
+        Mockito.when(repository.findById(1L)).thenReturn(Optional.ofNullable(mockProductEntity(1).get(0)));
         Mockito.doNothing().when(repository).deleteById(1L);
         service.deleteProduct(1L);
     }
